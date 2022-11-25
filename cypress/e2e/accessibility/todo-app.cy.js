@@ -19,4 +19,8 @@ describe('Todo application', () => {
         cy.wait(1000)
         cy.checkA11y('.learn')
     })
+
+    it('should only include rules with serious and critical impacts', () => {
+        cy.checkA11y(null, { includedImpacts: ['critical', 'serious'] })
+    })
   })
