@@ -13,4 +13,10 @@ describe('Todo application', () => {
         cy.injectAxe()
         cy.checkA11y( {exclude: ['.learn']} )
     })
+
+    it('should only test specific elements on the page', () => {
+        cy.visit('http://todomvc.com/examples/react')
+        cy.injectAxe()
+        cy.checkA11y('.learn')
+    })
   })
