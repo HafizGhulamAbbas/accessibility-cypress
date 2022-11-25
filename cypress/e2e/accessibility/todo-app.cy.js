@@ -4,11 +4,11 @@
 describe('Todo application', () => {
     beforeEach(() => {
         cy.visit('http://todomvc.com/examples/react')
-        cy.injectAxe()
+        cy.injectAxe() // inject axe core in your test application
     })
 
     it('should log any accessibility failures', () => {
-        cy.checkA11y()
+        cy.checkA11y() // scan your page from any accessibility violations
     })
 
     it('should exclude specific elements on the page', () => {
