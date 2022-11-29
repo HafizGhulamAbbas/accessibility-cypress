@@ -3,3 +3,4 @@ cypress/e2e/2-advanced-examples
 node_modules/
 package-lock.json
 cypress/videos/
+cypress/reports/

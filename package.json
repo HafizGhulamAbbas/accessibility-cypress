@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/HafizGhulamAbbas/accessibility-cypress#readme",
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.27.8",
     "cypress": "^11.1.0",
     "cypress-axe": "^1.0.0"
   }
